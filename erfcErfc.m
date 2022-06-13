@@ -16,11 +16,13 @@ switch indice
         clc
         fprintf(2,'\t\t\t\tEncontrar erf ')
         x = input('\nIngrese el valor de x: ');
+        fprintf('El valor de erf es: ')
         erf(x)
     case 2
         clc
         fprintf(2,'\t\t\t\tEncontrar erfc ')
         y = input('\nIngrese el valor de x: ');
+        fprintf('El valor de erfc es:  ')
         erfc(y)
     case 3
         clc
@@ -67,6 +69,7 @@ switch indice
         title('Gráfica de Erf & Erfc')
         xlabel('x')
         ylabel('Erf & Erfc')
+        legend('Erf','Erfc');
         
     otherwise
         disp('Lo sentimos no existe ese valor en el menú, por favor vuelve a intentar')
